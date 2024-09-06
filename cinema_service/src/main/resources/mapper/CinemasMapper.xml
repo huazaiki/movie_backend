@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huazaiki.mapper.CinemasMapper">
+
+    <resultMap id="BaseResultMap" type="com.huazaiki.domain.Cinemas">
+            <id property="cinId" column="cin_id" jdbcType="INTEGER"/>
+            <result property="cinName" column="cin_name" jdbcType="VARCHAR"/>
+            <result property="cinAddress" column="cin_address" jdbcType="VARCHAR"/>
+            <result property="cinPhone" column="cin_phone" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="selectCinemasByUsername" resultType="com.huazaiki.domain.Cinemas">
+        SELECT *
+        from cinemas
+        where cin_name like concat('%', #{cinName}, '%')
+    </select>
+</mapper>

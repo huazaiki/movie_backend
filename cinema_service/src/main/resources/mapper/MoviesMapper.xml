@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huazaiki.mapper.MoviesMapper">
+
+    <resultMap id="BaseResultMap" type="com.huazaiki.domain.Movies">
+            <id property="movId" column="mov_id" jdbcType="INTEGER"/>
+            <result property="movTitle" column="mov_title" jdbcType="VARCHAR"/>
+            <result property="movDescription" column="mov_description" jdbcType="VARCHAR"/>
+            <result property="movDirector" column="mov_director" jdbcType="VARCHAR"/>
+            <result property="movDuration" column="mov_duration" jdbcType="INTEGER"/>
+            <result property="movRating" column="mov_rating" jdbcType="DECIMAL"/>
+            <result property="movReleaseDate" column="mov_release_date" jdbcType="DATE"/>
+            <result property="movImage" column="mov_image" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        mov_id,mov_title,mov_description,
+        mov_director,mov_duration,mov_rating,
+        mov_release_date,mov_image
+    </sql>
+</mapper>
