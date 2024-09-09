@@ -1,4 +1,4 @@
-package com.huazaiki.vo;
+package com.huazaiki.entity.vo;
 
 import lombok.Data;
 

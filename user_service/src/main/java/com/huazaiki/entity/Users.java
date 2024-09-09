@@ -1,4 +1,4 @@
-package com.huazaiki.domain;
+package com.huazaiki.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -10,31 +10,41 @@ import java.io.Serializable;
 
 /**
  * 
- * @TableName cinemas
+ * @TableName users
  */
-@TableName(value ="cinemas")
+@TableName(value ="users")
 @Data
-public class Cinemas implements Serializable {
+public class Users implements Serializable {
     /**
-     * 影院ID
+     * 用户ID
      */
     @TableId(type = IdType.AUTO)
-    private Integer cinId;
+    private Integer userId;
 
     /**
-     * 影院名称
+     * 用户名
      */
-    private String cinName;
+    private String userName;
 
     /**
-     * 影院地址
+     * 密码
      */
-    private String cinAddress;
+    private String userPwd;
 
     /**
-     * 联系电话
+     * 邮箱
      */
-    private String cinPhone;
+    private String userEmail;
+
+    /**
+     * 电话号码
+     */
+    private String userPhone;
+
+    /**
+     * 0普通会员 1管理员
+     */
+    private Integer isAdmin;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
