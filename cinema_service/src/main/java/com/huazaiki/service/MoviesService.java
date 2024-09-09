@@ -1,7 +1,7 @@
 package com.huazaiki.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.huazaiki.domain.Movies;
+import com.huazaiki.entity.Movies;
 
 /**
 * @author huazaiki

@@ -1,9 +1,9 @@
 package com.huazaiki.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.huazaiki.domain.Users;
+import com.huazaiki.entity.Users;
 import com.huazaiki.utils.Result;
-import com.huazaiki.vo.LoginVo;
+import com.huazaiki.entity.vo.LoginVo;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

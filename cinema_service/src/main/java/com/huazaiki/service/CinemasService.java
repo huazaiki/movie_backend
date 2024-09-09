@@ -1,7 +1,7 @@
 package com.huazaiki.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.huazaiki.domain.Cinemas;
+import com.huazaiki.entity.Cinemas;
 
 import java.util.List;
 

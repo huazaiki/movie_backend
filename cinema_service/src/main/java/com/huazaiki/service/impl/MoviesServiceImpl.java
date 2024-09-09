@@ -1,7 +1,7 @@
 package com.huazaiki.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.huazaiki.domain.Movies;
+import com.huazaiki.entity.Movies;
 import com.huazaiki.mapper.MoviesMapper;
 import com.huazaiki.service.MoviesService;
 import org.springframework.stereotype.Service;

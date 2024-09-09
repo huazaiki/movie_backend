@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.huazaiki.mapper.UsersMapper">
 
-    <resultMap id="BaseResultMap" type="com.huazaiki.domain.Users">
+    <resultMap id="BaseResultMap" type="com.huazaiki.entity.Users">
             <id property="userId" column="user_id" jdbcType="INTEGER"/>
             <result property="userName" column="user_name" jdbcType="VARCHAR"/>
             <result property="userPwd" column="user_pwd" jdbcType="VARCHAR"/>
@@ -13,7 +13,7 @@
             <result property="isAdmin" column="is_admin" jdbcType="INTEGER"/>
     </resultMap>
 
-    <select id="selectByUsername" resultType="com.huazaiki.domain.Users">
+    <select id="selectByUsername" resultType="com.huazaiki.entity.Users">
         SELECT *
         from users
         where user_name = #{userName}

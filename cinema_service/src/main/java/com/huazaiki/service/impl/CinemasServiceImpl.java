@@ -1,7 +1,7 @@
 package com.huazaiki.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.huazaiki.domain.Cinemas;
+import com.huazaiki.entity.Cinemas;
 import com.huazaiki.mapper.CinemasMapper;
 import com.huazaiki.service.CinemasService;
 import org.springframework.beans.factory.annotation.Autowired;

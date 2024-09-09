@@ -1,7 +1,7 @@
 package com.huazaiki.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.huazaiki.domain.Cinemas;
+import com.huazaiki.entity.Cinemas;
 import com.huazaiki.service.CinemasService;
 import com.huazaiki.service.SchedulesService;
 import com.huazaiki.utils.Result;

@@ -2,7 +2,7 @@ package com.huazaiki.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.github.pagehelper.PageInfo;
-import com.huazaiki.domain.Schedules;
+import com.huazaiki.entity.Schedules;
 import com.huazaiki.utils.ScheduleVo;
 
 import java.util.List;

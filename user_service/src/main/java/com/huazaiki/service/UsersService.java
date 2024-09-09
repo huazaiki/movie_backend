@@ -2,8 +2,9 @@ package com.huazaiki.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.github.pagehelper.PageInfo;
-import com.huazaiki.domain.Users;
+import com.huazaiki.entity.Users;
 import com.huazaiki.utils.UsersVo;
+import org.apache.catalina.User;
 
 import java.util.List;
 
@@ -26,4 +27,5 @@ public interface UsersService extends IService<Users> {
 
     Users userLogin(String username, String password);
     Users userRegister(Users users);
+    Users adminLogin(String username, String password);
 }

@@ -1,7 +1,7 @@
 package com.huazaiki.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.huazaiki.domain.Users;
+import com.huazaiki.entity.Users;
 import com.huazaiki.service.UsersService;
 import com.huazaiki.utils.Result;
 import com.huazaiki.utils.UsersVo;

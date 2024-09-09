@@ -3,7 +3,7 @@ package com.huazaiki.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.huazaiki.domain.Schedules;
+import com.huazaiki.entity.Schedules;
 import com.huazaiki.mapper.SchedulesMapper;
 import com.huazaiki.service.SchedulesService;
 import com.huazaiki.utils.ScheduleVo;

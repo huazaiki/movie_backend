@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.huazaiki.domain.Users;
+import com.huazaiki.entity.Users;
 import com.huazaiki.mapper.UsersMapper;
 import com.huazaiki.service.UsersService;
 import com.huazaiki.utils.UsersVo;
@@ -79,6 +79,19 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users>
     public Users userRegister(Users users) {
         Integer i = insertUser(users);
         return i == 1 ? users : null;
+    }
+
+    @Override
+    public Users adminLogin(String username, String password) {
+        // 匹配用户名和密码
+        QueryWrapper<Users> query = new QueryWrapper<>();
+        query.eq("user_name", username);
+        query.eq("user_pwd", password);
+
+        Users user = usersMapper.selectOne(query);
+        
+        // 如果不是管理员则返回null
+        return user.getIsAdmin() == 1 ? user : null;
     }
 }
 

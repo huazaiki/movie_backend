@@ -1,7 +1,7 @@
 package com.huazaiki.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.huazaiki.domain.Users;
+import com.huazaiki.entity.Users;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
