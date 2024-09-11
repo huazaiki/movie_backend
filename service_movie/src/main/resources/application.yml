@@ -1,0 +1,28 @@
+server:
+  port: 8085
+#数据源
+spring:
+  application:
+    name: movie-cinema-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #驱动
+    username: root
+    password: xiaokeai941
+    url: jdbc:mysql:///movie_db?serverIimeZone=UTC
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+#添加mybatis-plus配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印SQL执行详情
+logging:
+  level:
+    com.baomidou.mybatisplus: debug # 启用MyBatis-Plus日志级别为debug
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

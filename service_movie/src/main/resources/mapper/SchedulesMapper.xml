@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huazaiki.mapper.SchedulesMapper">
+
+    <resultMap id="BaseResultMap" type="com.huazaiki.entity.Schedules">
+            <id property="schId" column="sch_id" jdbcType="INTEGER"/>
+            <result property="schMovieId" column="sch_movie_id" jdbcType="INTEGER"/>
+            <result property="schCinemaId" column="sch_cinema_id" jdbcType="INTEGER"/>
+            <result property="schShowTime" column="sch_show_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <select id="selectRef" resultType="com.huazaiki.entity.vo.ScheduleVO">
+        select sc.sch_id, m.mov_title, cin.cin_name, cin.cin_address, cin.cin_phone, sc.sch_show_time
+        from schedules sc
+                 join movies m on sch_movie_id = m.mov_id
+                 join cinemas cin on sch_cinema_id = cin.cin_id
+    </select>
+</mapper>
