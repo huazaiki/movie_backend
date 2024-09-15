@@ -1,8 +1,8 @@
 package com.huazaiki.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.github.pagehelper.PageInfo;
 import com.huazaiki.entity.Movies;
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.huazaiki.entity.vo.ScheduleVO;
 
 import java.util.List;

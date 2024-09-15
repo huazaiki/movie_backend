@@ -5,8 +5,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.huazaiki.entity.Cinemas;
-import com.huazaiki.service.CinemasService;
 import com.huazaiki.mapper.CinemasMapper;
+import com.huazaiki.service.CinemasService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

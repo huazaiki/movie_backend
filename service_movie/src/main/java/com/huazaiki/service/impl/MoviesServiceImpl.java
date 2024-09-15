@@ -7,9 +7,9 @@ import com.github.pagehelper.PageInfo;
 import com.huazaiki.entity.Movies;
 import com.huazaiki.entity.vo.ScheduleVO;
 import com.huazaiki.mapper.CinemasMapper;
+import com.huazaiki.mapper.MoviesMapper;
 import com.huazaiki.mapper.SchedulesMapper;
 import com.huazaiki.service.MoviesService;
-import com.huazaiki.mapper.MoviesMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -3,7 +3,6 @@ package com.huazaiki.controller;
 import com.github.pagehelper.PageInfo;
 import com.huazaiki.entity.Cinemas;
 import com.huazaiki.entity.Movies;
-import com.huazaiki.entity.vo.ScheduleVO;
 import com.huazaiki.service.CinemasService;
 import com.huazaiki.utils.Result;
 import io.swagger.v3.oas.annotations.Operation;

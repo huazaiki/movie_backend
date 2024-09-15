@@ -1,7 +1,7 @@
 package com.huazaiki.mapper;
 
-import com.huazaiki.entity.Schedules;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.huazaiki.entity.Schedules;
 import com.huazaiki.entity.vo.ScheduleVO;
 import org.apache.ibatis.annotations.Mapper;
 

@@ -1,7 +1,7 @@
 package com.huazaiki.mapper;
 
-import com.huazaiki.entity.Movies;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.huazaiki.entity.Movies;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

@@ -2,8 +2,6 @@ package com.huazaiki.entity;
 
 import lombok.Data;
 
-import java.io.Serializable;
-
 @Data
 public class Cinemas {
     private Integer cinId;
